@@ -7,3 +7,75 @@
 * Github: https://github.com/zsi-ga/ships.git
 * Licenc: GNU GPL
 */
+
+blockquote{
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: 5rem auto;
+    padding: .5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: 'italic', serif;
+    color: #1785b5;
+ }
+ 
+ blockquote::before {
+     content: '\201c';
+     top: 10px;
+     left: -40px; 
+ }
+ 
+ blockquote::after {
+
+     content: '\201d';
+     bottom: -30px;
+ }
+ 
+ blockquote::before,
+ blockquote::after {
+
+     font-size: 6rem;
+     position: absolute;
+ }
+ 
+ table {
+
+     font-family: arial,sans-serif;
+     border-collapse: collapse;
+     width: 80%;
+ }
+ 
+ td,th {
+
+     border: 1px solid #cccccc;
+     padding: 8px;
+ }
+ 
+ th {
+
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ 
+ tr:nth-child(even) {
+     background-color: #d5c9c9;
+ }
+ 
+ tr:hover {
+    
+     background-color: rgb(61, 63, 63);
+     color: rgb(32, 152, 249);
+ }
+ 
+ 
+ .about {
+     border-top: solid 3px rgb(230, 15, 15);
+     border-bottom: solid 3px rgb(13, 237, 17);
+     text-align: center;
+     position: fixed;
+     top: 50px;
+     right: -200px;
+     width: 650px;
+     transform: rotate(45deg);
+ }
